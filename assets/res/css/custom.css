@@ -1,0 +1,621 @@
+@import url('../../res/css/navegacao-portais.css');
+
+
+*:focus {
+  outline: none !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 10.5rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E6E6E6
+}
+ 
+
+.fixed-top {
+  margin-top: 30px;
+}
+
+.rounded {
+  border-radius: 1.25rem !important;
+}
+
+a {
+  color: #e30613;
+}
+
+a:hover {
+  color: #b91d32;
+}
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 40px;
+}
+
+.btn-primary {
+  background: rgb(192,13,13);
+  background: linear-gradient(90deg, rgba(192,13,13,1) 35%, rgba(227,6,19,1) 100%);
+  border-color: #DB081A; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: rgb(148, 11, 11);
+  background: linear-gradient(270deg, rgb(148, 11, 11) 35%, rgba(148, 11, 11) 100%); 
+}
+
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #DB081A;
+  border-color: #DB081A;
+}
+
+
+.bg-dark-red {
+  background-color: #b91d32;
+}
+
+.bg-grey {
+  background-color: #e5e9ea;
+}
+
+.bg-dark-grey {
+  background-color: #1A1A1A;
+}
+
+.bg-senai {
+  background-color: #e30613 !important;
+}
+
+.body-content {
+  margin-top: 60px;
+}
+
+.material-icons-sub {
+  vertical-align: sub;
+  line-height: 0;
+}
+
+.material-icons-middle {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.senai-page {
+  line-height: 28px;
+  width: 100%;
+}
+
+.navbar-brand>img {
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+
+#escola {
+  background:none
+}
+
+/* MENU ESCOLA */
+
+
+
+.navbar-escola {
+  padding: 0;
+}
+
+.navbar-header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #C00D0D;
+}
+
+.navbar-header.active {
+  background-color: #666666;
+}
+
+.navbar-header button {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.btn-menu-escola { 
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;  
+}
+
+.navbar-header .btn-menu-escola:before {
+  font-family: 'FontAwesome';
+  content: "\f107";
+  float: right; 
+  transition: all 0.5s;
+  margin-left: 5px;
+}
+.navbar-header.active .btn-menu-escola:before {
+ -webkit-transform: rotate(180deg);
+ -moz-transform: rotate(180deg);
+ transform: rotate(180deg);
+} 
+
+.nav-escola-item {
+  font-size: 14px;
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.nav-escola-item:last-child{
+  border-radius: 0px 0px 6px 6px;
+}
+
+.nav-escola-item:hover,
+.nav-escola-item:focus,
+.nav-escola-item:active,
+.nav-escola-item.active {
+  background-color: #c20717 !important;
+  border-color: #aa0614 !important;
+}
+
+/* SOCIAL MEDIA NOME E FOTO ESCOLA */
+
+ section.escola {
+   padding-bottom: 0;
+ }
+
+.card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-wrap img {
+  transition: transform .25s;
+  width: 100%;
+}
+
+.card-img-wrap:hover img {
+  transform: scale(1.010);
+}
+
+.card-img-maior {
+  height: 330px;
+  object-fit: cover;
+}
+
+.social-media {
+  padding: 25px 0;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #CCCCCC;
+}
+
+.social-media ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.social-media li a {
+  color: #999999;
+}
+
+.social-media li a:hover,
+.social-media li a:active,
+.social-media li a.active {
+  color: #cc0000;
+}
+
+
+
+.nome-cidade {
+  display: block;
+  padding: 20px 0;
+  margin: 20px 0 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.nome-escola h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.conheca-escola {
+  margin: -20px auto;
+  text-align: center;
+}
+
+.conheca-escola a {
+  padding: 10px 25px;
+  font-size: 14px;
+  transition: all 1s ease 0s;
+}
+
+
+
+/* DESTAQUES */
+#destaques {
+  padding: 50px 0 75px;
+  background: none
+}
+
+#destaques h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color:  #1A1A1A;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#destaques hr {
+  width: 10%;
+  background: #f00;
+}
+
+#destaques .titulo:before {
+  position: absolute;
+  width: 50px;
+  height: 22px;  
+  content: "";
+  background: url(../images/points-tit-left.png) center no-repeat;
+  background-size: contain;
+  top:10px;
+  left:130px;
+}
+
+#destaques .titulo:after {
+  position: absolute;
+  width: 50px;
+  height: 22px;  
+  content: "";
+  background: url(../images/points-tit-left.png) center no-repeat;
+  background-size: contain;
+  top:10px;
+  right:130px;
+  transform: rotateX(0deg) rotateY(180deg);
+  transform-style: preserve-3d;
+}
+ 
+
+.points01 {
+  display: block;
+  position:absolute;
+  width: 4px;
+  height: 100px;
+  left: 150px;
+  top: 100px;
+  background: url(../images/points01.png) no-repeat;
+  background-size: contain;
+  z-index: 9; 
+}
+
+.points02 {
+  display: block;
+  position:absolute;
+  width: 130px;
+  height: 100px;
+  top:0;
+  right: 0;
+  background: url(../images/points02.png) no-repeat;
+  background-size: contain;
+  z-index: 9;
+}
+
+.carousel-inner img{
+  border-radius: 7px;
+}
+
+/* SERVICOS */
+#servicos-home {
+  padding: 60px 0;
+  background-color: #E6E6E6;
+}
+
+#servicos-home .card {
+  padding: 30px;
+  margin: 15px 0;  
+}
+
+#servicos-home .card-body {
+  padding: 0 0 0 25px;
+  text-align: left;
+}
+
+#servicos-home h5
+ {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  min-height: 5rem; 
+}
+
+#servicos-home img.ico-cod-barras {
+  height: 55px;
+  margin-top: 10px;
+}
+
+#servicos-home img.ico-biblioteca {
+  height: 50px;
+  margin-top: 15px;
+}
+
+#servicos-home img.ico-vagas-emprego {
+  height: 58px;
+  margin-top: 10px;
+}
+
+
+/* NOTICIAS HOME */
+#noticias-home {
+  padding: 50px 0 75px;
+  background: #F2F2F2
+}
+
+#noticias-home h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color:  #1A1A1A;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#noticias-home hr {
+  width: 10%;
+  background: #f00;
+}
+
+#noticias-home .titulo:before {
+  position: absolute;
+  width: 50px;
+  height: 22px;  
+  content: "";
+  background: url(../images/points-tit-left.png) center no-repeat;
+  background-size: contain;
+  top:10px;
+  left: calc(50% - 150px);
+}
+
+#noticias-home .titulo:after {
+  position: absolute;
+  width: 50px;
+  height: 22px;  
+  content: "";
+  background: url(../images/points-tit-left.png) center no-repeat;
+  background-size: contain;
+  top:10px;
+  right: calc(50% - 150px);
+  transform: rotateX(0deg) rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+#noticias-home h3 {
+  font-weight: 700;
+}
+#noticias-home .carousel-indicators {
+  top: 280px;
+  bottom: 0;
+}
+#noticias-home .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  border: none
+}
+#noticias-home .carousel-indicators li.active {
+  background-color: red;
+}
+
+
+#noticias-home .card-img-maior {
+  height: 300px;
+  object-fit: cover;
+}
+
+#noticias-home .conteudo-ntc{
+  padding: 40px 20px;
+}
+
+#noticias-home .conteudo-ntc .link-conteudo-ntc {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+/* HORARIO */
+
+#horario {
+  padding: 50px 0;
+}
+
+#horario h2 {
+  margin: 0 auto;
+  padding-bottom:30px ;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color:  #1A1A1A;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#horario hr {
+  width: 10%;
+  background: #f00;
+}
+
+#horario ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+#horario li::before{
+  font-size: 20px;
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: .75em;
+  
+}
+ 
+/* ##################
+RESPONSIVE 
+#####################*/
+
+@media (min-width: 768px) {
+  .navbar-brand>img {
+    width: 145px;
+    z-index: 1001;
+    position: relative;
+  }
+
+  #escola {
+    background-image: url('../images/bg-home.jpg');
+    background-position: bottom center;
+    background-size: 100% 130%;
+    background-repeat: repeat-x;
+  }
+
+  .card-img-maior {
+    height: 430px;
+    object-fit: cover;
+  }
+
+  .social-media {
+    padding: 25px 0;
+    margin: 0 auto;
+    text-align: left;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  .nome-cidade {
+    display: block;
+    padding: 20px 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: left;
+  }
+  
+  .nome-escola h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .conheca-escola {
+    margin: 10px auto 0;
+    text-align: left;
+  }
+  
+  .conheca-escola a {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  
+  #noticias-home .titulo:before {
+    top:10px;
+    left: calc(50% - 150px)
+  }
+  
+  #noticias-home .titulo:after {
+    top:10px;
+    right: calc(50% - 150px)
+  }
+
+  #noticias-home .carousel-indicators {
+    bottom: -10px;
+  }
+
+  #noticias-home .conteudo-ntc{
+    padding: 0px;
+  }
+
+  #noticias-home .carousel-indicators {
+    top: 320px;
+    bottom: 0;
+  }
+
+  #noticias-home .conteudo-ntc .link-conteudo-ntc {
+    text-align: left;
+  }
+ 
+ } /*fim 768px */
+ 
+@media (min-width: 1024px) {
+    /* MENU */
+  .navbar-header {
+    display: none; 
+  } 
+
+
+  #destaques {
+    padding: 50px 0 75px;
+    background: #1A1A1A;
+  }
+  
+  #destaques h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color:  #ffffff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #destaques .titulo:before, #destaques .titulo:after {
+    display: none; 
+  }
+
+  #destaques img {
+    border-radius: 9px;
+  }
+
+  #servicos-home img.ico-cod-barras {
+    height: 55px;
+    margin-top: 10px;
+  }
+   
+
+
+
+} /*fim 1024px */ 
