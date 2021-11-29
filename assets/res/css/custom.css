@@ -285,6 +285,17 @@ fieldset[disabled] .btn-primary.active {
   background: #f00;
 }
 
+#destaques .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  border: none;
+  opacity: 1;
+}
+#destaques .carousel-indicators li.active {
+  background-color: red;
+}
+
 #destaques .titulo:before {
   position: absolute;
   width: 50px;
@@ -449,7 +460,9 @@ fieldset[disabled] .btn-primary.active {
   width: 10px;
   height: 10px;
   border-radius: 20px;
-  border: none
+  border: none;
+  background-color: #999999;
+  opacity: 1;
 }
 #noticias-home .carousel-indicators li.active {
   background-color: red;
