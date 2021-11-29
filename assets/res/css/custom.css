@@ -344,6 +344,17 @@ fieldset[disabled] .btn-primary.active {
   background-color: #E6E6E6;
 }
 
+#servicos-home .link-servico {
+  color: inherit;
+}
+
+#servicos-home .link-servico:hover {
+  text-decoration: none;
+}
+#servicos-home .link-servico:hover .shadow {
+  box-shadow: 0 .15rem .15rem rgba(0,0,0,.1)!important;
+}
+
 #servicos-home .card {
   padding: 30px;
   margin: 15px 0;  
