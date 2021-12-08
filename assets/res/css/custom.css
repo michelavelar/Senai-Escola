@@ -35,6 +35,15 @@ a:hover {
   color: #b91d32;
 }
 
+.titulo a {
+  color: inherit;
+}
+
+.titulo a:hover {
+  color:#e30613;
+  text-decoration: none;
+}
+
 .btn {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -42,7 +51,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: rgb(192,13,13);
+  background: #DB081A;
   background: linear-gradient(90deg, rgba(192,13,13,1) 35%, rgba(227,6,19,1) 100%);
   border-color: #DB081A; 
 }
@@ -53,6 +62,8 @@ a:hover {
 .btn-primary.active {
   background-color: rgb(148, 11, 11);
   background: linear-gradient(270deg, rgb(148, 11, 11) 35%, rgba(148, 11, 11) 100%); 
+  border-color: rgb(148, 11, 11); 
+  
 }
 
 .btn-primary.disabled:hover,
@@ -66,8 +77,16 @@ a:hover {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:active,
-fieldset[disabled] .btn-primary.active {
+fieldset[disabled] .btn-primary.active{
   background-color: #DB081A;
+  border-color: #DB081A;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+   
+  background: linear-gradient(90deg, rgb(176, 10, 10) 35%, rgb(209, 3, 17) 100%);
   border-color: #DB081A;
 }
 
@@ -122,6 +141,9 @@ fieldset[disabled] .btn-primary.active {
 
 
 .navbar-escola {
+  position: absolute;
+  width: 100%;
+z-index: 99;
   padding: 0;
 }
 
@@ -166,7 +188,13 @@ fieldset[disabled] .btn-primary.active {
 .nav-escola-item {
   font-size: 14px;
   width: 100%;
-  padding: 0px 15px;
+  padding: 0px;
+  
+}
+
+.nav-escola-item .nav-link {
+  color: #ffffff; 
+  margin-left: 14px;
 }
 
 .nav-escola-item:last-child{
@@ -180,6 +208,43 @@ fieldset[disabled] .btn-primary.active {
   background-color: #c20717 !important;
   border-color: #aa0614 !important;
 }
+
+.nav-escola-item.active {
+  background-color: #c20717 !important;
+}
+
+ul.sub-menu {
+  background-color: #c20717 !important;
+} 
+ul.sub-menu li{
+  background-color: #990000 !important;
+}
+
+ul.sub-menu.show li:hover{
+  background-color: rgba(0,0,0,.35) !important;
+}
+
+.sub-menu {
+  margin: 0;
+  padding: 0;
+}
+.sub-menu li {
+  list-style: none;
+  padding-left: 14px;
+}
+
+
+
+.nav-escola-item.plus:before {
+  color:#fff;
+  margin: 10px 10px 0 0;
+  font-family: 'FontAwesome';
+  content: "\f196";
+  float: right;  
+}
+.nav-escola-item.plus.active:before {
+  content: "\f147"; 
+} 
 
 /* SOCIAL MEDIA NOME E FOTO ESCOLA */
 
@@ -257,11 +322,7 @@ fieldset[disabled] .btn-primary.active {
   text-align: center;
 }
 
-.conheca-escola a {
-  padding: 10px 25px;
-  font-size: 14px;
-  transition: all 1s ease 0s;
-}
+ 
 
 
 
@@ -533,10 +594,18 @@ RESPONSIVE
   }
 
   #escola {
-    background-image: url('../images/bg-home.jpg');
-    background-position: bottom center;
-    background-size: 100% 130%;
-    background-repeat: repeat-x;
+    min-height: 440px;
+    background-image: url('../images/bg-home.jpg'); 
+    background-position-x: center;
+    background-position-y: 650px;
+    background-size: auto;
+    /* background-repeat: no-repeat; */
+  }
+
+  .navbar-escola {
+    position: absolute;
+  z-index: 99;
+    padding: 0;
   }
 
   .card-img-maior {
@@ -548,7 +617,8 @@ RESPONSIVE
     padding: 25px 0;
     margin: 0 auto;
     text-align: left;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC; 
+    border-top:none;
   }
 
   .nome-cidade {
@@ -585,6 +655,8 @@ RESPONSIVE
     top:10px;
     right: calc(50% - 150px)
   }
+
+
 
   #noticias-home .carousel-indicators {
     bottom: -10px;
