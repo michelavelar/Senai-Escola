@@ -597,9 +597,9 @@ RESPONSIVE
     min-height: 440px;
     background-image: url('../images/bg-home.jpg'); 
     background-position-x: center;
-    background-position-y: 650px;
-    background-size: auto;
-    /* background-repeat: no-repeat; */
+    background-position-y: -750px;
+    background-size: normal;
+    background-repeat: repeat-x;
   }
 
   .navbar-escola {
